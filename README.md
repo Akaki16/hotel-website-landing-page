@@ -2,6 +2,8 @@
 
 Responsive hotel website landing page
 
+[live demo](https://hotelo.netlify.app/)
+
 ## Tech Stack
 
 * HTML
