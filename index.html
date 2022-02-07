@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotelo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <!-- start of navbar -->
+    <nav class="navbar">
+        <button id="toggle-icon">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <div class="navbar-brand">
+            <h1><a href="/">Hotelo</a></h1>
+        </div>
+        <!-- start of links div -->
+        <div class="navbar-links">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="#top">Booking</a>
+                </li>
+                <li>
+                    <a href="#rooms">Rooms</a>
+                </li>
+                <li>
+                    <a href="#hotels">Hotels</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end of links div -->
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- top section -->
+    <section id="top">
+        <!-- start of container div -->
+        <div class="container">
+            <form class="booking-form">
+                <!-- start of form header div -->
+                <div class="form-header">
+                    <i class="fas fa-bed fa-2x"></i>
+                    <h2>Hotelo Booking</h2>
+                </div>
+                <!-- end of form header div -->
+                <!-- start of form body div -->
+                <div class="form-body">
+                    <div class="form-group">
+                        <label for="check_in"><i class="fas fa-calendar-week"></i> Check In</label>
+                        <input type="date" id="check_in" name="check_in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check_out"><i class="fas fa-calendar-week"></i> Check Out</label>
+                        <input type="date" id="check_out" name="check_out" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adults"><i class="fas fa-male"></i> Adults</label>
+                        <input type="number" id="adults" name="adults" placeholder="Enter the number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kids"><i class="fas fa-child"></i> Kids</label>
+                        <input type="number" id="kids" name="kids" placeholder="Enter the number" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">
+                            Search availability <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- end of form body div -->
+            </form>
+        </div>
+        <!-- end of container div -->
+    </section>
+    <!-- end of top section -->
+    <br>
+    <!-- rooms section -->
+    <section id="rooms">
+        <div class="container">
+            <h1>Rooms</h1>
+            <p>
+                Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.
+            </p>
+        </div>
+        <div class="rooms-container">
+            <div class="room-item">
+                <img src="/assets/images/rooms/single.png" alt="single_room">
+                <!-- start of body div -->
+                <div class="body">
+                    <h2 class="room-info">Single Room</h2>
+                    <h3 class="room-info">From $99</h3>
+                    <h4 class="room-info">Single Bed</h4>
+                    <h5 class="room-info">15m&sup2;</h5>
+                    <!-- start of icons div -->
+                    <div class="icons room-info">
+                        <i class="fas fa-bath"></i>
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <!-- end of icons div -->
+                    <!-- start of button div -->
+                    <div class="btn-container">
+                        <button type='button'>
+                            Choose Room
+                        </button>
+                    </div>
+                    <!-- end of button div -->
+                </div>
+                <!-- end of body div -->
+            </div>
+            <div class="room-item">
+                <img src="/assets/images/rooms/double.png" alt="double_room">
+                <!-- start of body div -->
+                <div class="body">
+                    <h2 class="room-info">Double Room</h2>
+                    <h3 class="room-info">From $149</h3>
+                    <h4 class="room-info">Queen-size bed</h4>
+                    <h5 class="room-info">25m&sup2;</h5>
+                    <!-- start of icons div -->
+                    <div class="icons room-info">
+                        <i class="fas fa-bath"></i>
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <!-- end of icons div -->
+                    <!-- start of button div -->
+                    <div class="btn-container">
+                        <button type='button'>
+                            Choose Room
+                        </button>
+                    </div>
+                    <!-- end of button div -->
+                </div>
+                <!-- end of body div -->
+            </div>
+            <div class="room-item">
+                <img src="/assets/images/rooms/deluxe.png" alt="deluxe_room">
+                <!-- start of body div -->
+                <div class="body">
+                    <h2 class="room-info">Deluxe Room</h2>
+                    <h3 class="room-info">From $199</h3>
+                    <h4 class="room-info">King-size bed</h4>
+                    <h5 class="room-info">40m&sup2;</h5>
+                    <!-- start of icons div -->
+                    <div class="icons room-info">
+                        <i class="fas fa-bath"></i>
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-cocktail"></i>
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <!-- end of icons div -->
+                    <!-- start of button div -->
+                    <div class="btn-container">
+                        <button type='button'>
+                            Choose Room
+                        </button>
+                    </div>
+                    <!-- end of button div -->
+                </div>
+                <!-- end of body div -->
+            </div>
+        </div>
+    </section>
+    <!-- end of rooms section -->
+    <br>
+    <!-- about section -->
+    <section id="about">
+        <div class="container">
+            <!-- start of about item div -->
+            <div class="about-item">
+                <h1>About</h1>
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum quasi vel recusandae magni nulla fuga omnis, error voluptates delectus repudiandae debitis iusto ipsum provident rem nostrum cum, nisi natus voluptas officiis ea ex vitae! Reprehenderit illo, dignissimos, numquam corrupti autem totam provident nemo eum modi vero architecto temporibus sit amet? Porro aliquid atque placeat voluptas veritatis ea voluptatum illum, tenetur unde earum, eius autem aut ut molestias incidunt nam iste corporis enim laboriosam, doloribus debitis hic laborum. Repudiandae necessitatibus dignissimos possimus iusto veniam explicabo minima, vero, voluptatem soluta quis, quia incidunt expedita nulla fugiat quasi voluptas? Natus, optio quod.
+                    </p>
+                    <br>
+                    We accept: <i class="far fa-credit-card"></i> <i class="fab fa-cc-paypal"></i> <i class="fas fa-credit-card"></i>
+                </article>
+            </div>
+            <!-- end of about item div -->
+            <div class="about-item">
+                <img src="./assets/images/about.png" alt="hotel_image">
+            </div>
+        </div>
+    </section>
+    <!-- end of about section -->
+    <br>
+    <br>
+    <!-- start of notification div -->
+    <div id="notification">
+        <p><i class="fas fa-exclamation-triangle"></i> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</p>
+    </div>
+    <!-- end of notification div -->
+    <br>
+    <!-- hotels section -->
+    <section id="hotels">
+        <!-- start of container div -->
+        <div class="container">
+            <h1>Hotels</h1>
+            <p>
+                You can find our hotels anywhere in the world:
+            </p>
+        </div>
+        <!-- end of container div -->
+        <!-- start of hotels container div -->
+        <div class="hotels-container">
+            <div class="hotel-item">
+                <div>
+                    <h3>New York</h3>
+                </div>
+            </div>
+            <div class="hotel-item">
+                <div>
+                    <h3>Los Angeles</h3>
+                </div>
+            </div>
+            <div class="hotel-item">
+                <div>
+                    <h3>Paris</h3>
+                </div>
+            </div>
+        </div>
+        <!-- end of hotels container div -->
+    </section>
+    <!-- end of hotels section -->
+    <br>
+    <!-- newsletter section -->
+    <section id="newsletter">
+        <!-- start of newsletter container -->
+        <div class="newsletter-container">
+            <h2 class="newsletter-item">Get the best offers first!</h2>
+            <h3 class="newsletter-item">Join our newsletter.</h3>
+            <!-- start of form -->
+            <form>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+            <!-- end of form -->
+        </div>
+        <!-- end of newsletter container -->
+    </section>
+    <!-- end of newsletter section -->
+    <br>
+    <!-- contact section -->
+    <section id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>
+                If you have any questions, do not hesitate to ask them.
+            </p>
+        </div>
+        <!-- start of contact form -->
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">
+                    SEND MESSAGE
+                </button>
+            </div>
+        </form>
+        <!-- end of contact form -->
+    </section>
+    <!-- end of contact section -->
+    <br>
+    <br>
+    <!-- footer -->
+    <section id="footer">
+        <!-- start of container div -->
+        <br>
+        <div class="container">
+            <div class="footer-item">
+                <h2>Hotelo</h2>
+                <br>
+                <ul style="display: flex;">
+                    <br>
+                    <li style="margin: 3px;"><a href="/"><i class="fab fa-facebook"></i></a></li>
+                    <li style="margin: 3px;"><a href="/"><i class="fab fa-twitter"></i></a></li>
+                    <li style="margin: 3px;"><a href="/"><i class="fab fa-instagram"></i></a></li>
+                    <li style="margin: 3px;"><a href="/"><i class="fab fa-reddit"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2>Home</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Booking</a></li>
+                    <li><a href="/">Rooms</a></li>
+                    <li><a href="/">Hotels</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Booking</a></li>
+                    <li><a href="/">Rooms</a></li>
+                    <li><a href="/">Hotels</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2>Booking</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Booking</a></li>
+                    <li><a href="/">Rooms</a></li>
+                    <li><a href="/">Hotels</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Booking</a></li>
+                    <li><a href="/">Rooms</a></li>
+                    <li><a href="/">Hotels</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of container div -->
+    </section>
+    <!-- end of footer -->
+
+    <!-- JavaScript -->
+    <script src="assets/script.js"></script>
+</body>
+</html>
